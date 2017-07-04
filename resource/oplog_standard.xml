@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<oplog id="OpLog_DDT" version="1.0" desc="运营日志文档">
+	<table name="Activity"  			desc="(必填)活动流水运营日志">
+		<types name="ActivityType">
+			<type name="zero"	 			value="0" 		desc="动态活动"/>
+			<type name="one"				value="1" 		desc="七天活动"/>
+			<type name="two"				value="2" 		desc="每月签到"/>
+			<type name="three"	  			value="3" 		desc="首充"/>
+			<type name="four"	 			value="4" 		desc="天梯排行榜"/>
+			<type name="five"	 			value="5" 		desc="魅力排行榜"/>
+			<type name="six"				value="6" 		desc="段位排行榜"/>
+			<type name="twentyseven"		value="27" 		desc="天梯功能"/>
+			<type name="timeLimitActivity"	value="30" 		desc="限时活动"/>
+		</types>
+		<column name="activityType"		type="int"										desc="(必填)活动类型" />
+		<column name="activityId"			type="int"										desc="(必填)活动iD" />
+		<column name="taskId"				type="int"										desc="(必填)任务id" />
+		<column name="taskStatus"			type="int"										desc="(必填)任务状态 0-未达成  1-已达成" />
+		<!--column  name="roleId"				type="varchar(64)"								desc="角色Id" /-->
+		<!--column  name="nickName"			type="varchar(100)"								desc="角色名" /-->
+	</table>  
+</oplog>
