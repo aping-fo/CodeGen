@@ -1,7 +1,4 @@
-/**
- * All rights reserved. This material is confidential and proprietary to 7ROAD DDT team.
- */
-package com.road.oplog.bean.template;
+﻿package com.road.oplog.bean.template;
 
 import com.road.oplog.bean.IOpType;
 import com.road.oplog.bean.OpLogInfo;
@@ -15,7 +12,7 @@ import com.road.oplog.bean.OpHeader;
  * 
  */
 @IOpType(code = "Activity", desc = "(必填)活动流水运营日志")
-public class OpActivity extends OpHeader
+public class OpActivity
 {
 	/* (必填)活动类型 */
 	private int activityType;
